@@ -1,0 +1,653 @@
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            /* the body part of the web page which contains all the contents  */
+            
+            body {
+                max-width: 100%;
+            }
+            
+            .container {
+                background-color: hsl(218, 28%, 13%);
+                max-width: 100%;
+                height: 100%;
+                color: #fff;
+                overflow-x: hidden;
+                padding: 0 auto;
+            }
+            
+            header {
+                display: flex;
+                padding: 30px 20px;
+            }
+            
+            nav {
+                display: flex;
+                justify-content: space-between;
+                font-family: 'Raleway', sans-serif;
+                gap: 30rem;
+            }
+            
+            .logo img {
+                width: 70%;
+            }
+            
+            ul {
+                display: flex;
+                list-style: none;
+                margin: 5px;
+            }
+            
+            li a {
+                font-weight: 100;
+                padding: 0 20px;
+                text-decoration: none;
+                color: #fff;
+            }
+            
+            li a:hover {
+                text-decoration: rgb(255, 255, 255) underline 2px;
+                font-weight: 600;
+            }
+            
+            .landingpage {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: hsl(217, 28%, 15%);
+            }
+            
+            .landingpage img {
+                width: 80%;
+            }
+            
+            .land-title {
+                height: 70vh;
+                background-color: hsl(217, 28%, 15%);
+                background-image: url(images/bg-curvy-desktop.svg);
+                background-repeat: no-repeat;
+                background-position: bottom;
+                background-size: contain;
+                font-size: 18px;
+                display: flex;
+                flex-direction: column;
+                padding: 0 320px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            
+            h2,
+            h3,
+            h5,
+            h6 {
+                font-family: 'Raleway', sans-serif;
+            }
+            
+            .land-title h2 {
+                font-size: 2rem;
+                margin: 20px;
+            }
+            
+            .land-title a {
+                color: #fff;
+                /* background-color: hsl(198, 60%, 50%); */
+                background: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+                margin-top: 20px;
+                border-radius: 50px;
+                padding: 12px 80px;
+                font-size: 0.9rem;
+                outline: none;
+                border: none;
+                text-decoration: none;
+            }
+            
+            .land-title a:hover {
+                /* background-color: hsl(320, 57%, 45%); */
+                cursor: pointer;
+                /* cursor: crosshair; */
+            }
+            
+            .grid {
+                margin: 0 10%;
+                margin-top: 5%;
+                display: flex;
+                width: 80%;
+                justify-content: space-around;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            
+            .card-1,
+            .card-2,
+            .card-3,
+            .card-4 {
+                display: block;
+                width: 50%;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 40px;
+            }
+            
+            .card-image {
+                margin: 10px;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+            
+            .card-title {
+                font-size: 1.3rem;
+                margin: 10px;
+            }
+            
+            .card-msg {
+                font-size: 14px;
+            }
+            
+            .stage-2 {
+                margin: 20px;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .stage-2-image {
+                width: 45%;
+            }
+            
+            .stage-2-image img {
+                width: 100%;
+            }
+            
+            .stage-2-msg {
+                display: block;
+                width: 50%;
+                padding: 20px;
+                margin: 100px 0;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .stage-2-msg h3 {
+                font-size: 2rem;
+            }
+            
+            .stage-2-msg p {
+                padding: 10px 0;
+                font-size: 14px;
+            }
+            
+            .stage-2-msg a {
+                color: hsl(176, 68%, 64%);
+            }
+            
+            .btn-product {
+                text-decoration-line: underline;
+            }
+            
+            .testimonial {
+                margin: 10px;
+                display: flex;
+                width: 95%;
+                justify-content: space-between;
+                background-image: url(images/bg-quotes.png);
+                background-repeat: no-repeat;
+            }
+            
+            .testimonial-1,
+            .testimonial-2,
+            .testimonial-3 {
+                display: block;
+                width: 300px;
+                margin: 35px 10px;
+                height: 150px;
+                padding: 10px;
+                background-color: hsl(217, 28%, 15%);
+                box-shadow: 2px 2px 1px 0px hsl(216, 53%, 9%);
+            }
+            
+            .test-img {
+                display: flex;
+                margin: 10px;
+                gap: 5px;
+            }
+            
+            .test-img img {
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+            }
+            
+            .form-card {
+                margin: auto;
+                justify-content: center;
+                width: 65%;
+                padding: 30px;
+                background-color: hsl(217, 28%, 15%);
+                border-radius: 5px;
+                box-shadow: 0 6px 4px 4px hsl(216, 53%, 9%);
+            }
+            
+            .form-bg {
+                background: linear-gradient(180deg, hsl(218, 28%, 13%)60%, hsl(216, 53%, 9%)40%);
+            }
+            
+            .form-head {
+                display: block;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 5px;
+            }
+            
+            .form-head h2 {
+                padding: 10px 5px;
+            }
+            
+            .form-head p {
+                padding: 10px;
+                font-size: 14px;
+            }
+            
+            .main-form {
+                justify-content: center;
+            }
+            
+            input {
+                margin: 10px;
+            }
+            
+            input[type=email] {
+                outline: none;
+                border-radius: 50px;
+                width: 60%;
+                padding: 10px;
+                border: none;
+            }
+            
+            input[type=button] {
+                border-radius: 50px;
+                width: 30%;
+                padding: 10px;
+                color: #fff;
+                outline: none;
+                border-color: hsl(176, 68%, 64%);
+                border: none;
+                background: linear-gradient( -45deg, hsl(198, 94%, 30%), hsl(176, 68%, 64%));
+            }
+            
+            .btn-btn:hover {
+                background-color: hsl(176, 76%, 77%);
+                cursor: pointer;
+            }
+            
+            footer {
+                font-size: 14px;
+                font-weight: 100;
+                padding-top: 60px;
+                background-color: hsl(216, 53%, 9%);
+            }
+            
+            .foot-logo {
+                padding: 0 0 0 50px;
+                width: 15%;
+            }
+            
+            .foot-logo img {
+                width: 100%;
+            }
+            
+            .upfooter {
+                display: flex;
+                width: 100%;
+                padding: 10px 40px;
+                justify-content: space-between;
+            }
+            
+            .location {
+                display: flex;
+                padding: 5px;
+                width: 30%;
+            }
+            
+            .location img {
+                width: 25px;
+                height: 20px;
+            }
+            
+            address {
+                padding-left: 10px;
+                text-emphasis: none;
+                text-transform: none;
+            }
+            
+            .num,
+            .mail {
+                display: flex;
+                padding: 5px;
+            }
+            
+            .num img,
+            .mail img {
+                width: 25px;
+                height: 15px;
+                padding-right: 10px;
+            }
+            
+            .list1,
+            .list2 {
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+            }
+            
+            .list1 h5,
+            .list2 h5 {
+                padding: 4px;
+            }
+            
+            .social {
+                display: flex;
+            }
+            
+            .social img {
+                width: 30px;
+                color: #fff;
+                height: 30px;
+                padding-right: 10px;
+            }
+            
+            @media screen and ( max-width:768px) {
+                header {
+                    display: flex;
+                    padding: 10px 5px;
+                }
+                nav {
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: 'Raleway', sans-serif;
+                    gap: 8em;
+                }
+                .logo {
+                    width: 25%;
+                }
+                .logo img {
+                    width: 100%;
+                }
+                ul {
+                    width: 75%;
+                    display: flex;
+                    list-style: none;
+                    margin: 1px;
+                }
+                li a {
+                    font-size: 14px;
+                    font-weight: 100;
+                    padding: 0 4px;
+                    text-decoration: none;
+                    color: #fff;
+                }
+                a:hover {
+                    text-decoration: rgb(255, 255, 255) underline 2px;
+                    font-weight: 200;
+                }
+                .landing-page {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: hsl(217, 28%, 15%);
+                }
+                .landing-page img {
+                    width: 100%;
+                }
+                .land-title {
+                    height: 70vh;
+                    background-color: hsl(217, 28%, 15%);
+                    background-image: url(images/bg-curvy-desktop.svg);
+                    background-repeat: no-repeat;
+                    background-position: bottom;
+                    background-size: contain;
+                    font-size: 14px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 80px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                h2,
+                h3,
+                h5,
+                h6 {
+                    font-family: 'Raleway', sans-serif;
+                }
+                .land-title h2 {
+                    font-size: 1.4rem;
+                    margin: 10px;
+                }
+                .land-title button {
+                    color: #fff;
+                    background: linear-gradient(45deg hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+                    margin-top: 20px;
+                    border-radius: 50px;
+                    padding: 6px 40px;
+                    font-size: 0.9rem;
+                    outline: none;
+                }
+                .grid {
+                    margin: 0 10%;
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    justify-content: space-around;
+                }
+                .card-1,
+                .card-2,
+                .card-3,
+                .card-4 {
+                    display: block;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 20px;
+                }
+                .card-image {
+                    margin: 10px;
+                    margin-bottom: 20px;
+                    width: 100%;
+                }
+                .card-title {
+                    font-size: 1rem;
+                    margin: 10px;
+                }
+                .card-msg {
+                    font-size: 14px;
+                }
+                .stage-2 {
+                    margin: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+                .stage-2-image {
+                    width: 100%;
+                }
+                .stage-2-image img {
+                    width: 100%;
+                }
+                .stage-2-msg {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    margin: 50px 0;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .stage-2-msg h3 {
+                    font-size: 1.2rem;
+                }
+                .stage-2-msg p {
+                    width: 90%;
+                    text-align: justify;
+                    padding: 5px 5px;
+                }
+                .stage-2-msg a {
+                    color: hsl(176, 68%, 64%);
+                }
+                .testimonial {
+                    margin: 10px;
+                    display: flex;
+                    width: 90%;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    background-image: url(images/bg-quotes.png);
+                    background-repeat: no-repeat;
+                }
+                .testimonial-1,
+                .testimonial-2,
+                .testimonial-3 {
+                    display: block;
+                    width: 300px;
+                    margin: 35px 10px;
+                    height: 150px;
+                    padding: 10px;
+                    background-color: hsl(217, 28%, 15%);
+                    box-shadow: 2px 2px 1px 4px hsl(218, 28%, 13%);
+                }
+                .test-img {
+                    display: flex;
+                    margin: 10px;
+                    gap: 5px;
+                }
+                .test-img img {
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                }
+                .form-card {
+                    margin: auto;
+                    justify-content: center;
+                    width: 80%;
+                    padding: 20px;
+                    background-color: hsl(217, 28%, 15%);
+                    border-radius: 5px;
+                    box-shadow: 0 6px 4px 4px hsl(216, 53%, 9%);
+                }
+                .form-bg {
+                    background: linear-gradient(180deg, hsl(218, 28%, 13%)60%, hsl(216, 53%, 9%)40%);
+                }
+                .form-head {
+                    display: block;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 5px;
+                }
+                .form-head h2 {
+                    font-size: 20px;
+                    padding: 6px 3px;
+                }
+                .form-head p {
+                    padding: 10px;
+                    font-size: 14px;
+                }
+                .main-form {
+                    justify-content: center;
+                }
+                input {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+                }
+                input[type=email] {
+                    outline: none;
+                    border-radius: 50px;
+                    width: 80%;
+                    padding: 10px;
+                    border: none;
+                    margin: auto;
+                }
+                input[type=button] {
+                    margin-top: 25px;
+                    border-radius: 50px;
+                    width: 80%;
+                    padding: 10px;
+                    color: #fff;
+                    outline: none;
+                    border-color: hsl(176, 68%, 64%);
+                    border: none;
+                    background: linear-gradient( -45deg, hsl(198, 94%, 30%), hsl(176, 68%, 64%));
+                }
+                footer {
+                    font-size: 14px;
+                    font-weight: 100;
+                    padding-top: 60px;
+                    background-color: hsl(216, 53%, 9%);
+                }
+                .foot-logo {
+                    padding: 0 0 0 50px;
+                    width: 40%;
+                }
+                .foot-logo img {
+                    width: 100%;
+                }
+                .upfooter {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 10px 40px;
+                    justify-content: space-between;
+                }
+                .location {
+                    display: flex;
+                    padding: 5px;
+                    width: 80%;
+                    margin: 20px 0;
+                }
+                .location img {
+                    width: 25px;
+                    height: 20px;
+                }
+                address {
+                    padding-left: 10px;
+                    text-emphasis: none;
+                    text-transform: none;
+                }
+                .contact {
+                    margin: 10px 0;
+                }
+                .num,
+                .mail {
+                    display: flex;
+                    padding: 5px;
+                }
+                .num img,
+                .mail img {
+                    width: 25px;
+                    height: 15px;
+                    padding-right: 10px;
+                }
+                .list1,
+                .list2 {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 5px;
+                    margin: 10px 0;
+                }
+                .list1 h5,
+                .list2 h5 {
+                    padding: 4px;
+                }
+                .social {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
